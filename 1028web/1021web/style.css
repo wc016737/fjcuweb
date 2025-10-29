@@ -1,0 +1,78 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+/* 導覽列 */
+.navbar {
+  background: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.navbar a.active,
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* 卡片區塊 */
+.product-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;   /* 一排最多 3 個 */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  background: #fff;
+  padding-bottom: 1rem;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card hr {
+  border: none;
+  border-top: 1px dashed #aaa;
+  margin: 1rem auto;
+  width: 80%;
+}
+.card p {
+  padding: 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Footer + Icons */
+footer {
+  position: relative;
+  background: #111;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+footer .social-icons {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+footer .social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
