@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Zen Maru Gothic',sans-serif;}
+body{background:#f5f8f4;color:#333;display:grid;grid-template-columns:240px 1fr;grid-template-rows:auto 1fr auto;min-height:100vh;}
+aside{background:#e9f3e4;padding:1rem;}
+aside ul li{list-style:none;margin:0.5rem 0;font-size:1rem;transition:background 0.3s;}
+aside ul li:hover{background:#d8e8d1;border-radius:6px;padding-left:4px;}
+aside ul li i{margin-right:8px;color:#4ca266;}
+header{grid-column:1/span 2;position:relative;}
+header .banner{background:url('images/bannerbg.jpg') no-repeat center/cover;height:200px;}
+.lang-music{position:absolute;top:10px;right:20px;display:flex;gap:1rem;}
+main{padding:2rem;}
+article h1{font-size:1.6rem;color:#666699;margin-bottom:1rem;}
+article .content{font-size:1.1rem;color:#7a7a52;margin-bottom:2rem;}
+.section1{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem;}
+.section1 section{padding:1rem;background:#fff;border-radius:12px;border:1px solid #e1e1e1;}
+.section1 h2{font-size:1.25rem;color:#ff6600;margin-bottom:1rem;}
+.section1 img{width:100%;margin-bottom:1rem;}
+.section1 .price{font-size:1.25rem;color:#0099cc;border-top:1px dashed #ccc;padding-top:0.5rem;}
+footer{grid-column:1/span 2;display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#e9f3e4;}
+footer .social a{margin-left:1rem;font-size:1.2rem;}
+footer .social a:hover{opacity:0.7;}
